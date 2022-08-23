@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --pink: rgb(199, 84, 104);
+    --light: rgb(239, 239, 223);
+}
+
+header {
+    background-color: var(--pink);
+    color: var(--light);
+    padding: 20px;
+}
+
+.Name {
+    font-weight: bold;
+    font-style: initial;
+    display: inline-block;
+    border: 3px dashed black;
+    padding: 10px;
+}
+
+#Profile-pic {
+    border-radius: 50%;
+    width: 15%;
+    height: 15%;
+    padding: 20px;
+}
+
+.About-me {
+    width: 100%;
+    display: inline-block;
+    background-image: url("../image/computer-2982270__340.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Subtitle {
+    margin-left: 20px;
+}
+
+
+.Navigation-bar{
+    float: right;
+    padding-top: 15px;
+}
+.Navigation-bar ul{
+list-style-type: none;
+}
+.Navigation-bar ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
