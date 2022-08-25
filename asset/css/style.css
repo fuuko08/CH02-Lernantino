@@ -21,9 +21,6 @@ header {
     border: 3px solid var(--light);
     padding: 10px;
 }
-.name:hover {
-    box-shadow: black;
-}
 
 #Profile-pic {
     border-radius: 50%;
@@ -94,16 +91,18 @@ h3:hover {
     margin-bottom: 20px;
     padding: 30px;
     height: 800px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
+.second-row {
+    height: 600px;
+}
 
 .first-row .second-row .third-row{
    padding: 50px;
    margin: auto;
    width: 30%;
    display: block;
-   height: 400px;
    margin-bottom: 20px;
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -119,65 +118,72 @@ h3:hover {
     box-shadow: inset 0px 0px 8px var(--pink);
 }
 
-#project1 {
-    float: right;
-    width: 300px;
-    height: 200px;
-    font-size: 20px;
-    background-image: url(../image/digital-marketing-meeting.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: -210px;
-}
-
-#project2 {
-    float: right;
-    width: 300px;
-    height: 200px;
-    background-image: url(../image/Screen\ Shot\ 2022-08-24\ at\ 7.50.30\ PM.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: -210px;
-    
-}
 .work {
-    padding: 20px;
-   margin: 0 auto;
-}
-.work:hover {
-    box-shadow: inset 0px 0px 8px var(--pink);
+    float: right;
+    margin-left: 30px;
+   width: 70%;
+   display: flex;
+   flex: wrap;
+   flex-direction: row;
 }
 
+#project1 {
+    margin-top: -250px;
+    padding: 10px;
+    border: solid var(--pink);
+    background-color: var(--light);
+    width: 300px; height: 250px;
+    flex: wrap;
+}
+#project2 {
+    margin-top: -250px;
+    margin-left: 100px;
+    padding: 10px;
+    border: solid var(--pink);
+    background-color: var(--light);  
+    width: 300px; height: 250px;
+    flex: wrap;
+}
+
+#project1 #project2 {
+    position: relative
+}
+#project1:hover {
+    border: solid var(--pink) 5px;
+    width: 350px; height: 280px;
+}
+#project2:hover {
+    border: solid var(--pink) 5px;
+    width: 350px; height: 280px;
+}
 .contact-info {
     float: right;
-    padding-top: 15px;
     margin-top: -100px;
+    margin-right: 20px;
 }
 .contact-info ul{
 list-style-type: none;
 }
 .contact-info ul li {
     display: inline-block;
-    margin-left: 25px;
-    font-size: 20px;
-    
+    font-size: 18px;
+   padding: 10px;
 }
-.more-info::after {
-    content: "";
-    display: table;
-    clear: both;
+.contact-info ul li:hover {
+    background-color: var(--pink);
 }
+
 footer {
     background-color: var(--pink);
     color: var(--light);
     text-align: center;
     padding: 20px;
     margin-top: -30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-@media screen and (max-width: 480px) {
-    body {
-        color: red;
-        background-color: aqua;
+@media screen and (max-width: 800px) {
+    .work {
+        flex-direction: column;
     }
 }
