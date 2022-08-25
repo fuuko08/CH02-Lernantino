@@ -25,3 +25,5 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
 ##Mock Up
+<img width="1792" alt="Screen Shot 2022-08-23 at 6 20 58 AM" src="https://user-images.githubusercontent.com/108949883/186783518-3b977ebe-e078-43e5-bd80-b710ae7f6ca0.png">
+<img width="1792" alt="Screen Shot 2022-08-23 at 6 21 47 AM" src="https://user-images.githubusercontent.com/108949883/186783528-10d137c4-91d5-4a7e-9105-2dc0177c6134.png">
